@@ -1,11 +1,11 @@
 # Green Stocks with VBA – Refactoring Code
 
-##Overview of Project
+## Overview of Project
 
-###Purpose and background
+### Purpose and background
 This project started with a script that analyzed the performance of twelve selected green energy stocks in the years 2017 and 2018. The original objective was to summarize the trading volume and change in value of each stock, in order to guide a reader toward a reasonable decision regarding which stocks would be suitable for future investment. From there, the challenge became to refactor the existing script to operate without its nested “for” loops, which were causing the system to read every row of the data sheet twelve times. By streamlining that section, it became possible to attain the same results substantially more quickly.
 
-##Results
+## Results
 ### Comparison of stock performance between 2017 and 2018
 In general, the selected stocks tended to perform better in 2017 than in 2018. In 2017, eleven of the stocks posted a positive return,  with TERP being the only exception. ![](VBA_Challenge_2017.png) Even then, TERP’s return of -7.21% was a relatively modest loss compared to some of the performances in 2018. The tickers DQ, ENPH, FSLR, and SEDG all had returns of above 100% in 2017. By contrast, only ENPH and RUN posted positive returns in 2018 , whereas the other ten stocks had returns ranging from -3.54% to -62.60%. Only ENPH and TERP improved their returns in 2018, and TERP still had a negative 2018 return. ![](VBA_Challenge_2018.png)
 
@@ -73,7 +73,7 @@ For i = 2 To RowCount
         
         Next i
 ```
-##Summary
+## Summary
 ### General information about refactoring
 Broadly speaking, the notion of refactoring provides a way to streamline code. This could be beneficial by making it easier for an outside party to read and understand the code, making the code more flexible in case the underlying data is changed or expanded, or in this case, allowing the code to execute more quickly. Possible problems would mostly stem from the refactoring being done carelessly, which could introduce logic errors or leave the new code with fragments from the earlier program which are no longer useful or desirable. It is also imperative to use comments and descriptive names if different people are doing the original and the refactoring, so that the flow and output of the program remains the same in both versions.
 
