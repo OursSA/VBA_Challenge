@@ -1,5 +1,7 @@
 # Green Stocks with VBA – Refactoring Code
+
 ##Overview of Project
+
 ###Purpose and background
 This project started with a script that analyzed the performance of twelve selected green energy stocks in the years 2017 and 2018. The original objective was to summarize the trading volume and change in value of each stock, in order to guide a reader toward a reasonable decision regarding which stocks would be suitable for future investment. From there, the challenge became to refactor the existing script to operate without its nested “for” loops, which were causing the system to read every row of the data sheet twelve times. By streamlining that section, it became possible to attain the same results substantially more quickly.
 
