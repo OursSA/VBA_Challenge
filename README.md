@@ -10,7 +10,7 @@ In general, the selected stocks tended to perform better in 2017 than in 2018. I
 ### Execution times of original versus refactored script
 The refactored script was executed considerably more quicky than the original, even when considering only the segments of the original that produced the volume and return data. For 2017, it took the original script 0.5 seconds to produce the volume and return data, without completing the conditional formatting of the Return column. ![](2017_No_Refactor.png) By contrast, the refactored code completed the same operations, and formatted the column, in 0.17 seconds. ![](VBA_Challenge_2017.png) 
 
-Similarly, the original script was slower without completing the formatting for the 2018 data. The original script ran in 0.7 secondsto produce only the numerical data. 
+Similarly, the original script was slower without completing the formatting for the 2018 data. The original script ran in 0.7 seconds to produce only the numerical data. 
 ![](2018_No_Refactor.png)  
 The refactored script ran in 0.19 seconds, and produced the same data along with conditional formatting. ![](VBA_Challenge_2018.png) 
 In both cases, the key to the increased speed was the removal of this block from the original code:
